@@ -1,0 +1,39 @@
+// ── SurveyGPT Brand Overrides ────────────────────────────────────────────────
+// This file is injected via Vite's SCSS additionalData, so it is available in
+// every SCSS/CSS module automatically.
+
+// ── Brand Colors ─────────────────────────────────────────────────────────────
+
+$brand-primary: #4f46e5;
+$brand-primary-hover: #4338ca;
+$brand-primary-light: #e0e7ff;
+$brand-accent: #7c3aed;
+
+// ── Carbon Token Overrides ────────────────────────────────────────────────────
+
+:root {
+  // Primary / interactive
+  --cds-interactive-01: #{$brand-primary};
+  --cds-interactive-02: #{$brand-primary-hover};
+  --cds-interactive-03: #{$brand-primary-light};
+  --cds-interactive-04: #f4f3ff;
+
+  // Focus
+  --cds-focus: #{$brand-primary};
+
+  // Buttons
+  --cds-button-primary: #{$brand-primary};
+  --cds-button-primary-hover: #{$brand-primary-hover};
+  --cds-button-primary-active: #3730a3;
+
+  // Links
+  --cds-link-01: #{$brand-primary};
+  --cds-link-01-hover: #{$brand-primary-hover};
+
+  // Icon colors
+  --cds-icon-01: #161616;
+  --cds-icon-02: #525252;
+
+  // Misc
+  --cds-inverse-01: #ffffff;
+}
