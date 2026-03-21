@@ -12,6 +12,9 @@ $brand-accent: #7c3aed;
 // ── Carbon Token Overrides ────────────────────────────────────────────────────
 
 :root {
+  // Surfaces — square corners (popover is the only radius token in compiled Carbon CSS)
+  --cds-popover-border-radius: 0;
+
   // Primary / interactive
   --cds-interactive-01: #{$brand-primary};
   --cds-interactive-02: #{$brand-primary-hover};
@@ -36,4 +39,24 @@ $brand-accent: #7c3aed;
 
   // Misc
   --cds-inverse-01: #ffffff;
+}
+
+// Carbon components use hardcoded radii in many places — flatten common surfaces.
+.cds--tile,
+.cds--modal-container,
+.cds--list-box,
+.cds--dropdown,
+.cds--text-input,
+.cds--textarea,
+.cds--content-switcher,
+.cds--header-panel,
+.cds--search-input,
+.cds--code-snippet,
+.cds--popover,
+.cds--overflow-menu-options,
+.cds--tag:not(.cds--tag--filter),
+.cds--toast-notification,
+.cds--inline-notification,
+.cds--actionable-notification {
+  border-radius: 0 !important;
 }

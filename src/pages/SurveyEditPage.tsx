@@ -69,7 +69,7 @@ export function SurveyEditPage() {
           fontSize: 16,
           backgroundColor: '#ffffff',
           textColor: '#161616',
-          buttonStyle: 'rounded',
+          buttonStyle: 'sharp',
           questionStyle: 'card',
         },
         createdAt: new Date().toISOString(),

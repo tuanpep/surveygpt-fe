@@ -227,7 +227,7 @@ body,
   height: 3rem;
   background: #eef2ff;
   color: #4f46e5;
-  border-radius: 0.75rem;
+  border-radius: 0;
   margin-bottom: 1rem;
 }
 
@@ -269,7 +269,7 @@ body,
   background: #fff;
   color: #4f46e5;
   border: 2px solid #e0e7ff;
-  border-radius: 1rem;
+  border-radius: 0;
   margin-bottom: 1rem;
 }
 
@@ -401,7 +401,7 @@ body,
 .faq__accordion .bx--accordion__item {
   margin-bottom: 0.75rem;
   border: 1px solid #e5e7eb;
-  border-radius: 0.75rem;
+  border-radius: 0;
   overflow: hidden;
 }
 
@@ -581,7 +581,7 @@ body,
   padding: 1rem;
   margin-bottom: 0.5rem;
   border: 2px solid #e0e0e0;
-  border-radius: 0.5rem;
+  border-radius: 0;
   background: #fff;
   cursor: pointer;
   transition: border-color 0.15s;
@@ -678,7 +678,7 @@ body,
 .survey-preview__frame {
   flex: 1;
   border: 1px solid #e0e0e0;
-  border-radius: 0.5rem;
+  border-radius: 0;
   background: #fafafa;
   transition: width 0.3s;
 }
@@ -1046,7 +1046,7 @@ body,
 .survey-edit-page__color-swatch {
   width: 3rem;
   height: 3rem;
-  border-radius: 0.5rem;
+  border-radius: 0;
   border: 2px solid #e0e0e0;
   flex-shrink: 0;
 }
@@ -1189,7 +1189,7 @@ body,
 .public-question--descriptive {
   padding: 1rem;
   background: #f4f4f4;
-  border-radius: 0.5rem;
+  border-radius: 0;
 }
 
 .public-question__header {
@@ -1256,7 +1256,7 @@ body,
   width: 3rem;
   height: 3rem;
   border: 2px solid #e0e0e0;
-  border-radius: 0.25rem;
+  border-radius: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1335,7 +1335,7 @@ body,
   background: none;
   border: none;
   padding: 0.25rem;
-  border-radius: 0.5rem;
+  border-radius: 0;
 }
 
 .public-emoji-rating__item:hover {
@@ -1686,7 +1686,7 @@ body,
 .integration-tile__icon {
   width: 2.5rem;
   height: 2.5rem;
-  border-radius: 0.5rem;
+  border-radius: 0;
   background: var(--cds-layer-accent-01, #e0e0e0);
   display: flex;
   align-items: center;
@@ -1744,7 +1744,7 @@ body,
 
 .faq-item {
   border: 1px solid #e0e0e0;
-  border-radius: 0.5rem;
+  border-radius: 0;
   overflow: hidden;
 }
 
@@ -2007,7 +2007,7 @@ body,
   min-block-size: unset;
   background: #fff;
   border: 1px solid #e0e0e0;
-  border-radius: 8px;
+  border-radius: 0;
   box-shadow: 0 2px 6px rgba(22, 22, 22, 0.04), 0 12px 32px rgba(22, 22, 22, 0.06);
   padding: 1.75rem 1.5rem 2rem;
   box-sizing: border-box;
@@ -2201,7 +2201,7 @@ body,
   padding: 2rem;
   background: #fff;
   border: 1px solid #e0e0e0;
-  border-radius: 0.5rem;
+  border-radius: 0;
   max-width: 320px;
 }
 
@@ -2225,7 +2225,7 @@ body,
   max-width: 640px;
   padding: 1rem;
   background: #f4f4f4;
-  border-radius: 0.5rem;
+  border-radius: 0;
 }
 
 .distribution-tips h4 {
@@ -2255,7 +2255,7 @@ body,
 .live-counter__dot {
   width: 8px;
   height: 8px;
-  border-radius: 50%;
+  border-radius: 0;
   background: #198038;
   animation: pulse 2s infinite;
 }

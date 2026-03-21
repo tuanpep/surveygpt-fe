@@ -166,7 +166,7 @@ export function QuestionChart({ stat }: QuestionChartProps) {
       {
         data: stat.distribution.map((d) => d.count),
         type: 'bar',
-        itemStyle: { borderRadius: [4, 4, 0, 0] },
+        itemStyle: { borderRadius: [0, 0, 0, 0] },
         ...(stat.average !== undefined
           ? {
               markLine: {
@@ -211,7 +211,7 @@ export function QuestionChart({ stat }: QuestionChartProps) {
         data: stat.distribution.map((d) => d.count),
         type: 'bar',
         itemStyle: {
-          borderRadius: [4, 4, 0, 0],
+          borderRadius: [0, 0, 0, 0],
           color: (params: any) => {
             const colors = ['#da1e28', '#fa4d56', '#f1c21b', '#fddc69', '#42be65', '#198038', '#0f62fe'];
             return colors[params.dataIndex % colors.length];

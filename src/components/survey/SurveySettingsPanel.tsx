@@ -228,7 +228,7 @@ export function SurveySettingsPanel({ surveyId }: SurveySettingsPanelProps) {
               <Select
                 id="button-style"
                 labelText="Button style"
-                value={theme.buttonStyle || 'rounded'}
+                value={theme.buttonStyle || 'sharp'}
                 onChange={(e) => setTheme(prev => ({ ...prev, buttonStyle: e.target.value as SurveyTheme['buttonStyle'] }))}
               >
                 <SelectItem value="rounded" text="Rounded" />
