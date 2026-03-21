@@ -36,14 +36,6 @@ export async function getInvitations(): Promise<Invitation[]> {
   return api.get('organizations/me/invitations').json<Invitation[]>();
 }
 
-export async function acceptInvitation(token: string): Promise<void> {
-  await api.post(`invitations/${token}/accept`);
-}
-
-export async function declineInvitation(token: string): Promise<void> {
-  await api.post(`invitations/${token}/decline`);
-}
-
 export async function getUsage(): Promise<OrgUsage> {
   return api.get('usage').json<OrgUsage>();
 }

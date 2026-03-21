@@ -13,10 +13,6 @@ export interface ApiError {
   details?: Record<string, string[]>;
 }
 
-export interface ApiSuccess {
-  message: string;
-}
-
 // ── Auth Types ────────────────────────────────────────────────────────────────
 
 export interface User {

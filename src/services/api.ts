@@ -1,5 +1,4 @@
 import ky from 'ky';
-import type { ApiError } from '@/types/api';
 
 export const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:8080/api/v1';
 
@@ -125,14 +124,3 @@ export const api = ky.create({
     ],
   },
 });
-
-export async function parseApiError(response: Response): Promise<ApiError> {
-  try {
-    return await response.json() as ApiError;
-  } catch {
-    return {
-      code: 'UNKNOWN_ERROR',
-      message: `Request failed with status ${response.status}`,
-    };
-  }
-}

@@ -153,26 +153,6 @@ export interface UpdateSurveyInput {
   tags?: string[];
 }
 
-// ── Template Types ────────────────────────────────────────────────────────────
-
-export interface Template {
-  id: string;
-  name: string;
-  description: string;
-  category: string;
-  questionCount: number;
-  blocks: BlockDef[];
-  isSystem: boolean;
-  createdAt: string;
-}
-
-export interface TemplateListInput {
-  cursor?: string;
-  limit?: number;
-  category?: string;
-  search?: string;
-}
-
 // ── Public Survey (respondent view) ───────────────────────────────────────────
 
 export interface PublicSurvey {
