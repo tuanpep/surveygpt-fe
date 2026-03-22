@@ -22,7 +22,7 @@ function ProfileSection() {
     e.preventDefault();
     setSaving(true);
     try {
-      await api.patch('auth/me', { json: { name, email } }).json<User>();
+      await api.put('me', { json: { name, email } }).json<User>();
       setToast({ kind: 'success', message: 'Profile updated' });
     } catch {
       setToast({ kind: 'error', message: 'Failed to update profile' });
@@ -88,7 +88,7 @@ function PasswordSection() {
     }
     setSaving(true);
     try {
-      await api.post('auth/change-password', {
+      await api.put('me/password', {
         json: { currentPassword, newPassword },
       });
       setToast({ kind: 'success', message: 'Password changed' });

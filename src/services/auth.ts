@@ -2,7 +2,7 @@ import { api } from './api';
 import type { AuthTokens, SignInInput, SignUpInput, ForgotPasswordInput, User } from '@/types/api';
 
 export async function signIn(input: SignInInput): Promise<AuthTokens> {
-  const tokens = await api.post('auth/signin', { json: input }).json<AuthTokens>();
+  const tokens = await api.post('auth/login', { json: input }).json<AuthTokens>();
   localStorage.setItem('sf_access_token', tokens.accessToken);
   if (tokens.refreshToken) {
     localStorage.setItem('sf_refresh_token', tokens.refreshToken);
@@ -11,7 +11,7 @@ export async function signIn(input: SignInInput): Promise<AuthTokens> {
 }
 
 export async function signUp(input: SignUpInput): Promise<AuthTokens> {
-  const tokens = await api.post('auth/signup', { json: input }).json<AuthTokens>();
+  const tokens = await api.post('auth/register', { json: input }).json<AuthTokens>();
   localStorage.setItem('sf_access_token', tokens.accessToken);
   if (tokens.refreshToken) {
     localStorage.setItem('sf_refresh_token', tokens.refreshToken);
@@ -24,7 +24,7 @@ export async function forgotPassword(input: ForgotPasswordInput): Promise<void> 
 }
 
 export async function getMe(): Promise<User> {
-  return api.get('auth/me').json<User>();
+  return api.get('me').json<User>();
 }
 
 export function signOut(): void {
